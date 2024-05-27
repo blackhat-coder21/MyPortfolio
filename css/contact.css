@@ -189,7 +189,7 @@ form .inp_field input {
     transform: translate(-50%, 0%);
     width: 30px;
     height: 40px;
-    background: lime;
+    background: rgb(1, 75, 171);
     /* background: #b2302c; */
     filter: blur(10px);
     z-index: -1;

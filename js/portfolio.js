@@ -158,18 +158,19 @@ $(document).ready(() => {
                     project_link: `www.${website}.com`,
 
                     image: [
-                        "resources/img/portfolios/web/1.jpg",
-                        "resources/img/portfolios/web/2.jpg",
-                        "resources/img/portfolios/web/3.jpg",
-                        "resources/img/portfolios/web/4.jpg",
-                        "resources/img/web_design.jpg",
-                        "resources/img/web_design.jpg",
-                        "resources/img/web_design.jpg",
-                        "resources/img/web_design.jpg",
-                        "resources/img/web_design.jpg",
+                        "img/portfolios/web/1.jpg",
+                        "img/portfolios/web/2.jpg",
+                        "img/portfolios/web/3.jpg",
+                        "img/portfolios/web/4.jpg",
+                        "img/web_design.jpg",
+                        "img/web_design.jpg",
+                        "img/web_design.jpg",
+                        "img/web_design.jpg",
+                        "img/web_design.jpg",
                     ],
                 });
-            } else if (card.classList.contains("logo")) {
+            } 
+            else if (card.classList.contains("logo")) {
                 tip.classList.add("view");
                 let website = card
                     .querySelector(".title")
@@ -192,18 +193,19 @@ $(document).ready(() => {
                     project_link: `www.${website}.com`,
 
                     image: [
-                        "resources/img/portfolios/logo/1.jpg",
-                        "resources/img/portfolios/logo/2.jpg",
-                        "resources/img/portfolios/logo/3.jpg",
-                        "resources/img/portfolios/logo/4.jpg",
-                        "resources/img/portfolios/logo/5.jpg",
-                        "resources/img/portfolios/logo/6.jpg",
-                        "resources/img/portfolios/logo/7.jpg",
-                        "resources/img/logo_design.jpg",
-                        "resources/img/logo_design.jpg",
+                        "img/portfolios/logo/1.jpg",
+                        "img/portfolios/logo/2.jpg",
+                        "img/portfolios/logo/3.jpg",
+                        "img/portfolios/logo/4.jpg",
+                        "img/portfolios/logo/5.jpg",
+                        "img/portfolios/logo/6.jpg",
+                        "img/portfolios/logo/7.jpg",
+                        "img/logo_design.jpg",
+                        "img/logo_design.jpg",
                     ],
                 });
-            } else if (card.classList.contains("card")) {
+            } 
+            else if (card.classList.contains("card")) {
                 tip.classList.add("view");
                 let website = card
                     .querySelector(".title")
@@ -226,15 +228,15 @@ $(document).ready(() => {
                     project_link: `www.${website}.com`,
 
                     image: [
-                        "resources/img/portfolios/card/1.jpg",
-                        "resources/img/portfolios/card/2.jpg",
-                        "resources/img/portfolios/card/3.jpg",
-                        "resources/img/portfolios/card/4.jpg",
-                        "resources/img/portfolios/card/5.jpg",
-                        "resources/img/graphics_design.jpg",
-                        "resources/img/graphics_design.jpg",
-                        "resources/img/graphics_design.jpg",
-                        "resources/img/graphics_design.jpg",
+                        "img/portfolios/card/1.jpg",
+                        "img/portfolios/card/2.jpg",
+                        "img/portfolios/card/3.jpg",
+                        "img/portfolios/card/4.jpg",
+                        "img/portfolios/card/5.jpg",
+                        "img/graphics_design.jpg",
+                        "img/graphics_design.jpg",
+                        "img/graphics_design.jpg",
+                        "img/graphics_design.jpg",
                     ],
                 });
             } else if (card.classList.contains("icon")) {
@@ -260,18 +262,19 @@ $(document).ready(() => {
                     project_link: `www.${website}.com`,
 
                     image: [
-                        "resources/img/portfolios/icon/1.jpg",
-                        "resources/img/portfolios/icon/2.jpg",
-                        "resources/img/portfolios/icon/3.jpg",
-                        "resources/img/portfolios/icon/4.jpg",
-                        "resources/img/portfolios/icon/5.jpg",
-                        "resources/img/icon_design.png",
-                        "resources/img/icon_design.png",
-                        "resources/img/icon_design.png",
-                        "resources/img/icon_design.png",
+                        "img/portfolios/icon/1.jpg",
+                        "img/portfolios/icon/2.jpg",
+                        "img/portfolios/icon/3.jpg",
+                        "img/portfolios/icon/4.jpg",
+                        "img/portfolios/icon/5.jpg",
+                        "img/icon_design.png",
+                        "img/icon_design.png",
+                        "img/icon_design.png",
+                        "img/icon_design.png",
                     ],
                 });
-            } else if (card.classList.contains("app")) {
+            } 
+            else if (card.classList.contains("app")) {
                 tip.classList.add("view");
                 let website = card
                     .querySelector(".title")
@@ -294,15 +297,50 @@ $(document).ready(() => {
                     project_link: `www.${website}.com`,
 
                     image: [
-                        "resources/img/portfolios/app/1.jpg",
-                        "resources/img/portfolios/app/2.jpg",
-                        "resources/img/portfolios/app/3.jpg",
-                        "resources/img/ui_design.jpg",
-                        "resources/img/ui_design.jpg",
-                        "resources/img/ui_design.jpg",
-                        "resources/img/ui_design.jpg",
-                        "resources/img/ui_design.jpg",
-                        "resources/img/ui_design.jpg",
+                        "img/portfolios/app/1.jpg",
+                        "img/portfolios/app/2.jpg",
+                        "img/portfolios/app/3.jpg",
+                        "img/ui_design.jpg",
+                        "img/ui_design.jpg",
+                        "img/ui_design.jpg",
+                        "img/ui_design.jpg",
+                        "img/ui_design.jpg",
+                        "img/ui_design.jpg",
+                    ],
+                });
+            }
+            else if (card.classList.contains("app1")) {
+                tip.classList.add("view");
+                let website = card
+                    .querySelector(".title")
+                    .textContent.replace(" ", "")
+                    .replace(" ", ".")
+                    .toLowerCase();
+                portfolioView({
+                    namePlate: card.querySelector(".title").textContent,
+                    category: "UI/UX Designing",
+                    project_brief: `Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. At corrupti modi perferendis
+                                    iure corporis dolores minus asperiores nemo
+                                    debitis veritatis id placeat, similique eum
+                                    recusandae ipsa quia cum earum nam?`,
+
+                    project_date: "2019",
+                    project_client: `${
+                        card.querySelector(".title").textContent
+                    } Corporation`,
+                    project_link: `www.${website}.com`,
+
+                    image: [
+                        "img/portfolios/app/app1.jpg",
+                        "img/portfolios/app/1.jpg",
+                        "img/portfolios/app/2.jpg",
+                        "img/portfolios/app/3.jpg",
+                        "img/portfolios/app/4.jpg",
+                        "img/portfolios/app/5.jpg",
+                        "img/portfolios/app/3.jpg",
+                        "img/portfolios/app/app1.jpg",
+                        "img/portfolios/app/2.jpg",
                     ],
                 });
             }
