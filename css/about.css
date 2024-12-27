@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
 
 html {
     scroll-behavior: smooth;
@@ -146,65 +154,18 @@ html {
     }
 }
 
-.wrapper {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100vh;
-    z-index: 100;
-    color: white;
-}
-
-.wrapper .face {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
-
-.wrapper .face.face1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 0 75px;
-}
-
-.face.face1 h1 {
-    font-family: "Kaushan Script", cursive;
-    font-size: 4.5vw;
-}
-
-.face.face1 p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-
-.wrapper .face.face2 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url("../img/pic.png") no-repeat right bottom;
-    background-size: contain;
-}
-
-.face.face1 h1 span,
-.face.face1 p span {
-    display: inline-block;
-}
-
 .button {
     position: relative;
     display: inline-block;
     margin: 10px 5px;
     padding: 15px 20px;
-    font-size: 35px;
+    font-size: 25px;
     color: #ffffff;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
     outline: none;
-    width: 35%;
+    width: 15%;
 }
 
 .button.download {
@@ -276,78 +237,62 @@ html {
     margin-left: calc(var(--width) * -2);
 }
 
-.skills {
-    width: 100%;
-    height: 100%;
-}
 .education {
     width: 100%;
     height: 100%;
 }
 
-.skills {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 50vh;
-    width: 100%;
-}
 
 .section {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .section h3 {
-    margin-left: 50px;
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.skills {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    justify-items: center; 
+}
+
+.icons img{
+    height: 60px;
+    width: 60px;
+}
+
+.icons img:hover {
+    transform: scale(1.3);
 }
 
 
-.skills .skill {
-    position: relative;
-    display: flex;
-    padding: 20px;
-    margin: 22px 50px;
-    height: 28px;
-    overflow: hidden;
-    border-radius: 10px;
-    transition: 0.25s ease-in-out;
+@media (max-width: 768px) {
+    .section h3 {
+        font-size: 1.6rem;
+    }
+
+    .icons {
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    }
+
+    .icons i {
+        font-size: 2.5rem;
+    }
 }
 
-.skill .name {
-    position: absolute;
-    top: 0%;
-    /* color: white; */
-}
-
-.skill .value {
-    position: absolute;
-    top: 0%;
-    right: 0;
-    /* color: white; */
-}
-
-.skill .percent {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    height: 20px;
-    border-radius: 100px;
-    box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.348), inset 3px 3px 5px rgba(0, 0, 0, 0.359),
-        inset -3px -3px 3px rgba(255, 255, 255, 0.09), inset -3px -3px 5px rgba(255, 255, 255, .09);
-}
-
-.skill .percent .progress {
-    position: absolute;
-    top: 50%;
-    left: 6px;
-    transform: translate(0%, -50%);
-    height: 10px;
-    width: 100%;
-    background: white;
-    border-radius: 100px;
-}
 
 /* EXPERIENCE */
 /* EDUCATION */
@@ -367,10 +312,10 @@ html {
 .education {
     position: relative;
     width: 100%;
-    min-height: 50vh;
+    min-height: 1vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 100px;
+    grid-gap: 50px;
 }
 
 .cover:nth-child(even) {
@@ -432,7 +377,7 @@ html {
 }
 
 .cover:last-child {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 /* MAIN CONTENT OF EXPERIENCE */
@@ -468,13 +413,6 @@ html {
 }
 
 @media (max-width: 582px) {
-    .skills {
-        position: relative;
-        display: grid;
-        grid-template-columns: 1fr;
-        height: 50vh;
-        width: 100%;
-    }
     .whitespace {
         display: none;
     }
@@ -482,7 +420,7 @@ html {
     .experience, .education {
         position: relative;
         width: 100%;
-        min-height: 50vh;
+        min-height: 1vh;
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -531,22 +469,6 @@ html {
 }
 
 @media (max-width: 500px) {
-
-    .wrapper .face.face1 {
-        padding: 0 0 0 10px;
-    }
-
-    .face.face1 h1 {
-        font-family: "Kaushan Script", cursive;
-        font-size: 4.5vw;
-    }
-    
-    .face.face1 p {
-        padding-right: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-    }
-
     .button {
         position: relative;
         display: inline-block;
@@ -561,16 +483,6 @@ html {
         width: 35%;
     }
 
-    .wrapper .face.face2 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        opacity: .3;
-    }
 }
 
 @media (max-width: 366px) {
@@ -593,12 +505,46 @@ html {
 }
 
 @media (max-width: 290px) {
-    .wrapper .face.face1 {
-        padding: 0;
+}
+
+.home-content {
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.home-content h3 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.home-content h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.multiple-text {
+    color: var(--main-color);
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 2.4rem;
     }
-    .face.face1 p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        text-align: center;
+
+    .home-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .multiple-text {
+        font-size: 1.6rem;
     }
 }

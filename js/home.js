@@ -203,3 +203,13 @@ window.addEventListener("resize", () => {
     canvas.width = canvas.parentElement.offsetWidth;
     canvas.height = canvas.parentElement.offsetHeight;
 });
+
+document.querySelectorAll('.multiple-text').forEach((el) => {
+    new Typed(el, {
+      strings: ['Full Stack Developer', 'Web Developer', 'Android App Developer'],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true
+    });
+  });

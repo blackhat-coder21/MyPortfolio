@@ -27,20 +27,3 @@ for (let i = 0; i < foot_link.length; i++) {
         link.setAttribute("style", `--img_left: ${x}px; --img_top: ${y}px`);
     });
 }
-
-// let bg_wrapper = document.querySelector(".bg_wrapper");
-
-// for (let i = 0; i < 6; i++) {
-//     let h1 = document.createElement("h1");
-//     h1.classList.add("dummy_text");
-//     bg_wrapper.appendChild(h1);
-//     for (let i = 0; i < 20; i++) {
-//         let span = document.createElement("span");
-//         span.textContent = "Shuvro";
-//         h1.appendChild(span);
-//     }
-// }
-
-// document.addEventListener("scroll", () => {
-//     bg_wrapper.setAttribute("style", `--x: ${window.scrollY}`);
-// });

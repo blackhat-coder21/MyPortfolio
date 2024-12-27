@@ -10,6 +10,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="swiper js/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/loader.css" />
     <link rel="stylesheet" href="css/hamburger.css" />
     <link rel="stylesheet" href="css/home.css" />
@@ -24,6 +25,15 @@
 </head>
 
 <body>
+
+    <div class="loader">
+        <div class="c c1"></div>
+        <div class="c c2"></div>
+        <div class="c c3"></div>
+        <div class="c c4"></div>
+        <div class="c c5"></div>
+        <div class="c c6"></div>
+    </div>
 
     <div class="hamburger">
         <div class="bar1"></div>
@@ -49,7 +59,7 @@
                 <a href="#" onclick="contact(); animate5.play()">contact</a>
             </li>
         </ul>
-        <p>&copy; 2021 Ankit</p>
+        <p>&copy; 2024 Ankit</p>
     </nav>
 
     <div class="container">
@@ -62,10 +72,11 @@
                 </div>
                 <div class="content-for-home">
                     <div class="img-container"></div>
-                    <h1 align="center">Ankit Kumar</h1>
+                    <h1 align="center">I'm <span style="color: #0ef;">Ankit Kumar</span></h1>
+                    <h3><span class="multiple-text"></span></h3>
                     <div class="social-icons">
                         <div class="s-icon">
-                            <a href="#">
+                            <a href="mailto:kr21ankit@gmail.com">
                                 <i class="fas fa-envelope"></i>
                             </a>
                             <div class="s-name">Email</div>
@@ -171,29 +182,15 @@
                 </div>
 
                 <!-- REAL CONTENT -->
-                <div class="wrapper">
-                    <div class="face face1">
-                        <div class="content">
-                            <p>Hello,</p>
-                            <h1>I'm Ankit</h1>
-                            <p>
-                                An undergraduate at IIIT Allahabad. My strong understanding of web development technologies such as HTML, CSS, and JavaScript, combined with my expertise 
-                                in app development, allows me to bring coding projects to 
-                                life with a great user interface. Additionally, I am skilled 
-                                in frameworks like Flutter, Android Studio, Jetpack Compose, 
-                                and ReactJS. I have developed applications like an ERP system 
-                                for IIIT Allahabad and GradePlus, an Android app for college 
-                                students to get study materials at their finger tip. As a 
-                                dedicated and detail-oriented individual, I strive to produce high-quality code and stay current in my field. My commitment to innovation is evident through my mentorship roles in various technical clubs and contributions to open-source projects.
-                            </p>
-                            <a class="button download" href="img/resume_final.pdf" download="ankit_cv">Download CV</a>
-                            <a class="button hire" href="#" class="hire" onclick="contact(); animate5.play()">Hire
-                                Me.</a>
-                        </div>
-                    </div>
-                    <div class="face face2"></div>
+                <div class="home-content">
+                    <h3>Hello, It's Me</h3>
+                    <h1>Ankit Kumar</h1>
+                    <h3>And I'm a <span class="multiple-text"></span></h3>
                 </div>
-
+                <div class="button_about">
+                    <a class="button download" href="img/resume_final.pdf" download="ankit_cv">Download CV</a>
+                    <a class="button hire" href="#" class="hire" onclick="contact(); animate5.play()">Hire Me.</a>
+                </div>
                 <!-- THE NAVIGATION OF ABOUT -->
                 <nav class="about_nav">
                     <ul>
@@ -210,188 +207,45 @@
                 </nav>
 
                 <div class="about_container">
+                    <!-- Skills -->
                     <div class="skills">
                         <div class="section">
                             <h3>Programming Languages</h3>
-                            <div class="skill">
-                                <div class="name">C/C++</div>
-                                <div class="value" style="left: 95%">95%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 95%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">Kotlin</div>
-                                <div class="value" style="left: 90%">90%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">Dart</div>
-                                <div class="value" style="left: 90%">90%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">Python</div>
-                                <div class="value" style="left: 80%">80%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 80%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">Java</div>
-                                <div class="value" style="left: 75%">75%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 75%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">C#</div>
-                                <div class="value" style="left: 65%">65%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 65%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">HTML/CSS</div>
-                                <div class="value" style="left: 90%">90%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">PHP</div>
-                                <div class="value" style="left: 65%">65%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 65%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">JavaScript</div>
-                                <div class="value" style="left: 75%">75%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 75%"></div>
-                                </div>
+                            <div class="icons">
+                                <img class="skill_logo" alt="C/C++" src="img/logo/C++.png"></img>
+                                <img class="skill_logo" alt="Java" src="img/logo/java.png"></img>
+                                <img class="skill_logo" alt="Python" src="img/logo/python.png"></img>
+                                <img class="skill_logo" alt="JavaScript" src="img/logo/javascript.png"></img>
+                                <img class="skill_logo" alt="HTML" src="img/logo/html.png"></img>
+                                <img class="skill_logo" alt="Kotlin" src="img/logo/kotlin.png"></img>
+                                <img class="skill_logo" alt="CSS" src="img/logo/css.png"></img>
+                                <img class="skill_logo" alt="Kotlin/Dart" src="img/logo/android.png"></img>
+                                <img class="skill_logo" alt="Dart" src="img/logo/flutter.png"></img>
                             </div>
                         </div>
-                    
+
                         <div class="section">
                             <h3>Frameworks</h3>
-                            <div class="skill">
-                                <div class="name">Figma</div>
-                                <div class="value" style="left: 70%">70%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 70%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">XML</div>
-                                <div class="value" style="left: 70%">70%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 70%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">Flutter</div>
-                                <div class="value" style="left: 90%">90%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">Android Studio</div>
-                                <div class="value" style="left: 95%">95%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 95%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">Jetpack Compose</div>
-                                <div class="value" style="left: 85%">85%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">React JS</div>
-                                <div class="value" style="left: 70%">70%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 70%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">Bootstrap</div>
-                                <div class="value" style="left: 80%">80%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 80%"></div>
-                                </div>
+                            <div class="icons">
+                                <img class="skill_logo" alt="Restful API" src="img/logo/api.png"></img>
+                                <img class="skill_logo" alt="Bootstrap" src="img/logo/bootstrap.png"></img>
+                                <img class="skill_logo" alt="Figma" src="img/logo/figma.png"></img>
+                                <img class="skill_logo" alt="Android Studio" src="img/logo/android_studio.png"></img>
+                                <img class="skill_logo" alt="Jetpack Compose" src="img/logo/jetpack.png"></img>
                             </div>
                         </div>
-                    
+
                         <div class="section">
                             <h3>Utilities and DBs</h3>
-                            <div class="skill">
-                                <div class="name">Firebase</div>
-                                <div class="value" style="left: 95%">95%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 95%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">XAMPP Server</div>
-                                <div class="value" style="left: 60%">60%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 60%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">Retrofit & API</div>
-                                <div class="value" style="left: 65%">65%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 65%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">Git</div>
-                                <div class="value" style="left: 90%">90%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">Room Database</div>
-                                <div class="value" style="left: 80%">80%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 80%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">MySQL</div>
-                                <div class="value" style="left: 90%">90%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">GitHub</div>
-                                <div class="value" style="left: 90%">90%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="name">MongoDB</div>
-                                <div class="value" style="left: 65%">65%</div>
-                                <div class="percent">
-                                    <div class="progress" style="width: 65%"></div>
-                                </div>
+                            <div class="icons">
+                                <img class="skill_logo" alt="Git" src="img/logo/social.png"></img>
+                                <img class="skill_logo" alt="GitHub" src="img/logo/github.png"></img>
+                                <img class="skill_logo" alt="MySQL" src="img/logo/mysql.png"></img>
+                                <img class="skill_logo" alt="Firebase" src="img/logo/firebase.png"></img>
+                                <img class="skill_logo" alt="Mongodb" src="img/logo/mongodb.png"></img>
                             </div>
                         </div>
                     </div>
-                    
 
                     <!-- EXPERIENCE -->
                     <div class="experience">
@@ -402,50 +256,18 @@
                             <h2>SDE Intern</h2>
                             <i class="name_company">Mcube Media Forum</i>
                             <article class="text_hidden">
-                                M3 Media Forum highlights the significance of M3: Mann (Mind), Mandir (Temple), and Moksha (Salvation). Controlling the mind, which moves fastest, is crucial for attaining salvation. Temples possess special energy that aids in meditation and mind control. Our "Know Your Temple" initiative encourages visits to ancient Sanatan temples to experience their energy and provides authentic historical and mythological information about them. If you believe in Sanatan Dharma, we urge you to meditate in these temples to control your mind and progress towards salvation.
+                                M3 Media Forum highlights the significance of M3: Mann (Mind), Mandir (Temple), and
+                                Moksha (Salvation). Controlling the mind, which moves fastest, is crucial for attaining
+                                salvation. Temples possess special energy that aids in meditation and mind control. Our
+                                "Know Your Temple" initiative encourages visits to ancient Sanatan temples to experience
+                                their energy and provides authentic historical and mythological information about them.
+                                If you believe in Sanatan Dharma, we urge you to meditate in these temples to control
+                                your mind and progress towards salvation.
                             </article>
                         </div>
-                        <!-- <div class="whitespace"></div>
-                        <div class="whitespace"></div>
-                        <div class="cover">
-                            <i class="job_box fas fa-briefcase"></i>
-                            <i class="date">Apr 2024 - Jan 2025</i>
-                            <h2>Full Stack Developer</h2>
-                            <i class="name_company">Company Name</i>
-                            <article class="text_hidden">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ut sint magnam ipsam
-                                eveniet omnis nemo commodi dolorum neque
-                                fugiat, soluta tempora vitae error magni.
-                            </article>
-                        </div>
-                        <div class="cover">
-                            <i class="job_box fas fa-briefcase"></i>
-                            <i class="date">Feb 2023 - Apr 2023</i>
-                            <h2>Full Stack Developer</h2>
-                            <i class="name_company">Company Name</i>
-                            <article class="text_hidden">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ut sint magnam ipsam
-                                eveniet omnis nemo commodi dolorum neque
-                                fugiat, soluta tempora vitae error magni.
-                            </article>
-                        </div>
-                        <div class="whitespace"></div>
-                        <div class="whitespace"></div>
-                        <div class="cover">
-                            <i class="job_box fas fa-briefcase"></i>
-                            <i class="date">Aug 2023 - Feb 2024</i>
-                            <h2>Full Stack Developer</h2>
-                            <i class="name_company">Company Name</i>
-                            <article class="text_hidden">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ut sint magnam ipsam
-                                eveniet omnis nemo commodi dolorum neque
-                                fugiat, soluta tempora vitae error magni.
-                            </article>
-                        </div> -->
                     </div>
+
+                    <!-- Education -->
                     <div class="education">
                         <div class="middle_line"></div>
                         <div class="cover">
@@ -479,24 +301,12 @@
                         </div>
                         <div class="whitespace"></div>
                         <div class="whitespace"></div>
-                        <!-- <div class="cover">
-                            <i class="job_box fas fa-book-open"></i>
-                            <i class="date">2012 - 2016</i>
-                            <h2>Bachelor In Science</h2>
-                            <i class="name_company">BUET, Bangladesh.</i>
-                            <article class="text_hidden">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ut sint magnam ipsam
-                                eveniet omnis nemo commodi dolorum neque
-                                fugiat, soluta tempora vitae error magni.
-                            </article>
-                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- about -->
+        <!-- Services -->
         <div class="layer layer3">
             <div class="services main">
                 <!-- <section class="background">
@@ -512,51 +322,27 @@
                             <span class="box-side box-bottom">be innovative</span>
                         </span>
                     </span>
-                    <p class="hero-text">
-                        As a skilled app and web developer, I strive for perfection in 
-                        every project. Working with me is not only smooth but also delightful. 
-                        Let's craft something remarkable together!
-                        
-                    </p>
                 </div>
                 <div class="capabilities left move-little-down">
-                    <img src="img/elements/app_bg.png" alt=""/>
+                    <img src="img/elements/app_bg.png" alt="" />
                     <p class="c_content">
                         <span class="c_title">App</span>
-                        My journey into app development began with a strong foundation 
-                        in programming languages. Embracing the latest frameworks and 
-                        technologies, I craft user-friendly and innovative mobile 
-                        applications. With a blend of creativity and technical expertise, 
-                        I deliver captivating and functional apps that exceed expectations. 
-                        Let's create something extraordinary together!
+                        I started my journey in app development with a solid grasp of programming languages. By adopting
+                        modern frameworks and technologies, I create intuitive and innovative mobile apps. Combining
+                        creativity with technical skills, I aim to deliver engaging and high-performing applications
+                        that surpass expectations. Let’s build something amazing together!
                         <br />
                         <a href="#">Learn More</a>
                         <i class="far fa-arrow-alt-circle-right"></i>
                     </p>
-                </div>
-                <div class="capabilities right">
-                    <p class="c_content">
-                        <span class="c_title">Graphics</span>
-                        With a designers eye for details, I'm
-                        passionate about implementing designed into highly
-                        interactive experience by paying close attention to
-                        details, animations and performances.
-                        <br />
-                        <a href="#">Learn More</a>
-                        <i class="far fa-arrow-alt-circle-right"></i>
-                    </p>
-                    <img src="img/elements/graphics_bg.png" alt="" />
                 </div>
                 <div class="capabilities left">
-                    <img src="img/elements/web_bg.png" alt=""/>
+                    <img src="img/elements/web_bg.png" alt="" />
                     <p class="c_content">
                         <span class="c_title">Web</span>
-                        My creative journey started with Web Design. To
-                        code my own designs, I learned how to code and has
-                        since then worked hard to stay relevant in both
-                        fields. For smooth collaboration with clients I'm
-                        now-a-days using frameworks and popular programing languages for designing
-                        and prototyping.
+                        My journey began with web design. To bring my designs to life, I learned to code and have worked
+                        hard to stay skilled in both areas. For better collaboration with clients, I now use frameworks
+                        and popular programming languages for designing and prototyping.
                         <br />
                         <a href="#">Learn More</a>
                         <i class="far fa-arrow-alt-circle-right"></i>
@@ -567,17 +353,12 @@
                     <div class="foot-link">
                         <a href="#" onclick="portfolio()">Apps</a>
                         <i class="far fa-arrow-alt-circle-right"></i>
-                        <img src="img/portfolios/card/2.jpg" alt="portfolio" />
+                        <img src="img/elements/app.jpg" alt="portfolio" />
                     </div>
                     <div class="foot-link">
                         <a href="#" onclick="portfolio()">Website</a>
                         <i class="far fa-arrow-alt-circle-right"></i>
-                        <img src="img/portfolios/web/1.jpg" alt="portfolio" />
-                    </div>
-                    <div class="foot-link">
-                        <a href="#" onclick="portfolio()">Profile World</a>
-                        <i class="far fa-arrow-alt-circle-right"></i>
-                        <img src="img/portfolios/app/2.jpg" alt="portfolio" />
+                        <img src="img/elements/web.jpg" alt="portfolio" />
                     </div>
                 </div>
             </div>
@@ -685,31 +466,12 @@
                         <li>
                             <a class="filter" href="#" data-filter=".web">Websites</a>
                         </li>
-                        <!-- <li>
-                            <a class="filter" href="#" data-filter=".logo">Logo</a>
-                        </li>
-                        <li>
-                            <a class="filter" href="#" data-filter=".card">Cards</a>
-                        </li> -->
                         <li>
                             <a class="filter" href="#" data-filter=".app">Apps</a>
                         </li>
-                        <!-- <li>
-                            <a class="filter" href="#" data-filter=".icon">Icons</a>
-                        </li> -->
                     </ul>
                 </nav>
                 <div class="mymixcont">
-                    <!-- <div class="mix web">
-                        <img src="img/portfolios/web/1.jpg" alt="" />
-                        <span class="title">Lora Website</span>
-                        <span class="port_link">View Project</span>
-                    </div>
-                    <div class="mix icon">
-                        <img src="img/portfolios/icon/5.jpg" alt="" />
-                        <span class="title">Water World</span>
-                        <span class="port_link">View Project</span>
-                    </div> -->
                     <div class="mix app app2">
                         <img src="img/portfolios/app/erp/erp_logo.jpg" alt="" />
                         <span class="title">Pragyanam App</span>
@@ -765,101 +527,6 @@
                         <span class="title">AcadMate</span>
                         <span class="port_link">View Project</span>
                     </div>
-                    <!-- <div class="mix card">
-                        <img src="img/portfolios/card/2.jpg" alt="" />
-                        <span class="title">Art Director</span>
-                        <span class="port_link">View Project</span>
-                    </div>
-                    <div class="mix web">
-                        <img src="img/portfolios/web/3.jpg" alt="" />
-                        <span class="title">Web App Pro</span>
-                        <span class="port_link">View Project</span>
-                    </div>
-                    <div class="mix card">
-                        <img src="img/portfolios/card/3.jpg" alt="" />
-                        <span class="title">Reauty</span>
-                        <span class="port_link">View Project</span>
-                    </div>
-                    <div class="mix web">
-                        <img src="img/portfolios/web/4.jpg" alt="" />
-                        <span class="title">Sonor Design</span>
-                        <span class="port_link">View Project</span>
-                    </div>
-                    <div class="mix card">
-                        <img src="img/portfolios/card/4.jpg" alt="" />
-                        <span class="title">Richard Tan</span>
-                        <span class="port_link">View Project</span>
-                    </div>
-                    <div class="mix logo">
-                        <img src="img/portfolios/logo/1.jpg" alt="" />
-                        <span class="title">Kitty Pic</span>
-                        <span class="port_link">View Project</span>
-                    </div>
-                    <div class="mix icon">
-                        <img src="img/portfolios/icon/4.jpg" alt="" />
-                        <span class="title">Domine</span>
-                        <span class="port_link">View Project</span>
-                    </div>
-                    <div class="mix app">
-                        <img src="img/portfolios/app/2.jpg" alt="" />
-                        <span class="title">Profile World</span>
-                        <span class="port_link">View Project</span>
-                    </div>
-                    <div class="mix logo">
-                        <img src="img/portfolios/logo/2.jpg" alt="" />
-                        <span class="title">Specialisterne</span>
-                        <span class="port_link">View Project</span>
-                    </div>
-                    <div class="mix logo">
-                        <img src="img/portfolios/logo/3.jpg" alt="" />
-                        <span class="title">Native Design</span>
-                        <span class="port_link">View Project</span>
-                    </div>
-                    <div class="mix card">
-                        <img src="img/portfolios/card/5.jpg" alt="" />
-                        <span class="title">Sriram Mohan</span>
-                        <span class="port_link">View Project</span>
-                    </div>
-                    <div class="mix logo">
-                        <img src="img/portfolios/logo/4.jpg" alt="" />
-                        <span class="title">Book Worm</span>
-                        <span class="port_link">View Project</span>
-                    </div>
-                    <div class="mix icon">
-                        <img src="img/portfolios/icon/2.jpg" alt="" />
-                        <span class="title">Football FC</span>
-                        <span class="port_link">View Project</span>
-                    </div>
-                    <div class="mix logo">
-                        <img src="img/portfolios/logo/5.jpg" alt="" />
-                        <span class="title">Free Notes</span>
-                        <span class="port_link">View Project</span>
-                    </div>
-                    <div class="mix icon">
-                        <img src="img/portfolios/icon/1.jpg" alt="" />
-                        <span class="title">Insta Genre</span>
-                        <span class="port_link">View Project</span>
-                    </div>
-                    <div class="mix logo">
-                        <img src="img/portfolios/logo/6.jpg" alt="" />
-                        <span class="title">Movie Sock</span>
-                        <span class="port_link">View Project</span>
-                    </div>
-                    <div class="mix logo">
-                        <img src="img/portfolios/logo/7.jpg" alt="" />
-                        <span class="title">Village Community Church</span>
-                        <span class="port_link">View Project</span>
-                    </div>
-                    <div class="mix app">
-                        <img src="img/portfolios/app/3.jpg" alt="" />
-                        <span class="title">Weathery</span>
-                        <span class="port_link">View Project</span>
-                    </div>
-                    <div class="mix icon">
-                        <img src="img/portfolios/icon/3.jpg" alt="" />
-                        <span class="title">Fav Shop</span>
-                        <span class="port_link">View Project</span>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -884,11 +551,12 @@
                             </div>
                             <p>
                                 <span>&ldquo;</span>
-                                Ankit is an absolute gem! His expertise in web design and app 
-                                development is unmatched. Working with him was a breeze—he's 
+                                Ankit is an absolute gem! His expertise in web design and app
+                                development is unmatched. Working with him was a breeze—he's
                                 dedicated, talented, and always goes above and beyond. Highly recommend!
                             </p>
                         </div>
+
                         <div class="swiper-slide">
                             <img src="img/home_bg.png" alt="" />
                             <h4>Ankit Kumar</h4>
@@ -901,76 +569,8 @@
                             </div>
                             <p>
                                 <span>&ldquo;</span>
-                                Ankit is an absolute gem! His expertise in web design and app 
-                                development is unmatched. Working with him was a breeze—he's 
-                                dedicated, talented, and always goes above and beyond. Highly recommend!
-                            </p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/home_bg.png" alt="" />
-                            <h4>Ankit Kumar</h4>
-                            <div class="rating">
-                                <label>&starf;</label>
-                                <label>&starf;</label>
-                                <label>&starf;</label>
-                                <label>&starf;</label>
-                                <label>&starf;</label>
-                            </div>
-                            <p>
-                                <span>&ldquo;</span>
-                                Ankit is an absolute gem! His expertise in web design and app 
-                                development is unmatched. Working with him was a breeze—he's 
-                                dedicated, talented, and always goes above and beyond. Highly recommend!
-                            </p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/home_bg.png" alt="" />
-                            <h4>Ankit Kumar</h4>
-                            <div class="rating">
-                                <label>&starf;</label>
-                                <label>&starf;</label>
-                                <label>&starf;</label>
-                                <label>&starf;</label>
-                                <label>&starf;</label>
-                            </div>
-                            <p>
-                                <span>&ldquo;</span>
-                                Ankit is an absolute gem! His expertise in web design and app 
-                                development is unmatched. Working with him was a breeze—he's 
-                                dedicated, talented, and always goes above and beyond. Highly recommend!
-                            </p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/home_bg.png" alt="" />
-                            <h4>Ankit Kumar</h4>
-                            <div class="rating">
-                                <label>&starf;</label>
-                                <label>&starf;</label>
-                                <label>&starf;</label>
-                                <label>&starf;</label>
-                                <label>&starf;</label>
-                            </div>
-                            <p>
-                                <span>&ldquo;</span>
-                                Ankit is an absolute gem! His expertise in web design and app 
-                                development is unmatched. Working with him was a breeze—he's 
-                                dedicated, talented, and always goes above and beyond. Highly recommend!
-                            </p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/home_bg.png" alt="" />
-                            <h4>Ankit Kumar</h4>
-                            <div class="rating">
-                                <label>&starf;</label>
-                                <label>&starf;</label>
-                                <label>&starf;</label>
-                                <label>&starf;</label>
-                                <label>&starf;</label>
-                            </div>
-                            <p>
-                                <span>&ldquo;</span>
-                                Ankit is an absolute gem! His expertise in web design and app 
-                                development is unmatched. Working with him was a breeze—he's 
+                                Ankit is an absolute gem! His expertise in web design and app
+                                development is unmatched. Working with him was a breeze—he's
                                 dedicated, talented, and always goes above and beyond. Highly recommend!
                             </p>
                         </div>
@@ -1042,125 +642,135 @@
     <!-----------------SWIPER JS {https://swiperjs.com/} [USED IN portfolio.js, blog.js]----------------->
     <script src="swiper js/swiper-bundle.min.js"></script>
     <!-----------------MAPBOX GL {https://www.mapbox.com/} [USED IN contact.js]----------------->
-    <scmapbox-gl/mapbox-gl.js"></script>
-    <!-----------------EMAIL JS {https://www.emailjs.com/} [USED IN contact.js]----------------->
-    <script src="js/email.min.js"></script>
-    <!-----------------ADDITIONAL SCRIPT FOR EMAIL JS----------------->
-    <!-- <script type="text/javascript">
+    <scmapbox-gl /mapbox-gl.js"></script>
+        <!-----------------EMAIL JS {https://www.emailjs.com/} [USED IN contact.js]----------------->
+        <script src="js/email.min.js"></script>
+        <!-----------------ADDITIONAL SCRIPT FOR EMAIL JS----------------->
+        <!-- <script type="text/javascript">
         (function () {
             emailjs.init("user_5OMETIDQ2Nm9qBMtaFNz4");
         })();
     </script> -->
 
-    <script src="js/vanilla-tilt.min.js"></script>
-    <!-----------------ANIME JS {https://animejs.com/} [USED LOCALLY.]----------------->
-    <script src="js/anime.min.js"></script>
-    <!-----------------LOCAL (HOME)----------------->
-    <script src="js/home.js"></script>
-    <!-----------------LOCAL (ABOUT)----------------->
-    <script src="js/about.js"></script>
-    <!-----------------LOCAL (SERVICES)----------------->
-    <script src="js/services.js"></script>
-    <!-----------------LOCAL (PORTFOLIO)----------------->
-    <script src="js/portfolio.js"></script>
-    <!-----------------LOCAL (BLOG)----------------->
-    <script src="js/blog.js"></script>
-    <!-----------------LOCAL (CONTACT)----------------->
-    <script src="js/contact.js"></script>
-    <!-----------------LOCAL (MAIN FILE)----------------->
-    <script src="js/main.js"></script>
 
-     <!-----------------LOCAL (MAIN FILE { USED TO ANIMATE WEBPAGE.})----------------->
-     <script>
-        const animate1 = anime.timeline({
-            targets: ".circle",
-            loop: true,
-            duration: 2000,
-            direction: "alternate",
-            easing: "easeInOutQuad",
-        });
-        animate1.add({
-            translateX: 350,
-        });
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-        let dot = document.querySelectorAll(".dot");
-        for (let i = 0; i < dot.length; i++) {
-            const ind = dot[i];
-            const animate2 = anime.timeline({
-                targets: ind,
+        <script src="js/vanilla-tilt.min.js"></script>
+        <!-----------------ANIME JS {https://animejs.com/} [USED LOCALLY.]----------------->
+        <script src="js/anime.min.js"></script>
+        <!-----------------LOCAL (HOME)----------------->
+        <script src="js/home.js"></script>
+        <!-----------------LOCAL (ABOUT)----------------->
+        <script src="js/about.js"></script>
+        <!-----------------LOCAL (SERVICES)----------------->
+        <script src="js/services.js"></script>
+        <!-----------------LOCAL (PORTFOLIO)----------------->
+        <script src="js/portfolio.js"></script>
+        <!-----------------LOCAL (BLOG)----------------->
+        <script src="js/blog.js"></script>
+        <!-----------------LOCAL (CONTACT)----------------->
+        <script src="js/contact.js"></script>
+        <!-----------------LOCAL (MAIN FILE)----------------->
+        <script src="js/main.js"></script>
+
+        <!-----------------LOCAL (MAIN FILE { USED TO ANIMATE WEBPAGE.})----------------->
+        <script>
+
+            window.addEventListener("load", () => {
+                const loader = document.querySelector(".loader");
+                loader.classList.add("remove");
+            });
+
+            const animate1 = anime.timeline({
+                targets: ".circle",
                 loop: true,
+                duration: 2000,
                 direction: "alternate",
-                delay: i * 100,
+                easing: "easeInOutQuad",
             });
-            animate2.add({
-                scale: 2,
+            animate1.add({
+                translateX: 350,
             });
-        }
 
-        let span = document.querySelectorAll(".content .text span");
-        const animate3 = anime.timeline({
-            targets: span,
-            easing: "easeInOutExpo",
-            delay: anime.stagger(20, { direction: "reverse" }),
-            direction: "reverse",
-            autoplay: false,
-        });
-
-        animate3.add({
-            rotate: () => {
-                return anime.random(-360, 360);
-            },
-            translateX: () => {
-                return anime.random(-500, 500);
-            },
-            translateY: () => {
-                return anime.random(-500, 500);
-            },
-            duration: 3000,
-        });
-
-        const animate4 = anime({
-            targets: ".button",
-            scale: [0, 1],
-            delay: anime.stagger(200, { start: 7000 }),
-            autoplay: false,
-        });
-
-        const animate5 = anime({
-            targets: [
-                document.querySelectorAll(".info"),
-                document.querySelectorAll(".inp_field"),
-                ".message",
-                ".submit",
-            ],
-            translateY: [50, 0],
-            rotateX: [90, 0],
-            opacity: [0, 1],
-            delay: anime.stagger(300, { start: 1000 }),
-            duration: 750,
-            autoplay: false,
-            easing: "easeOutQuint",
-        });
-        
-        const animate6 = anime({
-            targets: ['.services .t_dummy', '.services .hero-text'],
-            duration: 1000,
-            scaleX: [0, 1],
-            delay: anime.stagger(300, {start: 1000}),
-            autoplay: false,
-        });
-
-        function resize() {
-            if (window.innerWidth <= 632) {
-                animate5.play();
-                animate3.play();
-                animate4.play();
-                animate6.play();
+            let dot = document.querySelectorAll(".dot");
+            for (let i = 0; i < dot.length; i++) {
+                const ind = dot[i];
+                const animate2 = anime.timeline({
+                    targets: ind,
+                    loop: true,
+                    direction: "alternate",
+                    delay: i * 100,
+                });
+                animate2.add({
+                    scale: 2,
+                });
             }
-        }
-        resize();
-        window.addEventListener("resize", resize);
-    </script>
+
+            let span = document.querySelectorAll(".content .text span");
+            const animate3 = anime.timeline({
+                targets: span,
+                easing: "easeInOutExpo",
+                delay: anime.stagger(20, { direction: "reverse" }),
+                direction: "reverse",
+                autoplay: false,
+            });
+
+            animate3.add({
+                rotate: () => {
+                    return anime.random(-360, 360);
+                },
+                translateX: () => {
+                    return anime.random(-500, 500);
+                },
+                translateY: () => {
+                    return anime.random(-500, 500);
+                },
+                duration: 3000,
+            });
+
+            const animate4 = anime({
+                targets: ".button",
+                scale: [0, 1],
+                delay: anime.stagger(200, { start: 7000 }),
+                autoplay: false,
+            });
+
+            const animate5 = anime({
+                targets: [
+                    document.querySelectorAll(".info"),
+                    document.querySelectorAll(".inp_field"),
+                    ".message",
+                    ".submit",
+                ],
+                translateY: [50, 0],
+                rotateX: [90, 0],
+                opacity: [0, 1],
+                delay: anime.stagger(300, { start: 1000 }),
+                duration: 750,
+                autoplay: false,
+                easing: "easeOutQuint",
+            });
+
+            const animate6 = anime({
+                targets: ['.services .t_dummy', '.services .hero-text'],
+                duration: 1000,
+                scaleX: [0, 1],
+                delay: anime.stagger(300, { start: 1000 }),
+                autoplay: false,
+            });
+
+            function resize() {
+                if (window.innerWidth <= 632) {
+                    animate5.play();
+                    animate3.play();
+                    animate4.play();
+                    animate6.play();
+                }
+            }
+            resize();
+            window.addEventListener("resize", resize);
+        </script>
 </body>
 
 </html>
