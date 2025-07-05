@@ -9,7 +9,7 @@ const exp = [
     cardImage: "",
     place: "Mcube Media Forum",
     time: "(May, 2024 - July, 2024)",
-    desp: "<li>Worked to migrate Flipkart lite’s product page to AMP pages so that they load up instantly.</li> <li>Made changes in the current progressive web app of Flipkart to react to different actions performed on AMP page.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>",
+    desp: "<li>Worked as a frontend and backend app developer</li>",
   },
   // {
   //   title: "Student Developer",
