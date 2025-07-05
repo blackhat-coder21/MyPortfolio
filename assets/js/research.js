@@ -199,7 +199,7 @@ const addStyles = () => {
 const profiles = [
   {
     name: "Codeforces",
-    rating: "1449",
+    rating: "1533",
     rank: "Specialist",
     link: "https://codeforces.com/profile/black_hatcoder",
     color: "#1F8ACB",
@@ -212,7 +212,7 @@ const profiles = [
   },
   {
     name: "LeetCode",
-    rating: "2012",
+    rating: "2019",
     rank: "Knight",
     link: "https://leetcode.com/u/Black_hatCoder/",
     color: "#FFA116",
@@ -229,8 +229,8 @@ const profiles = [
   },
   {
     name: "CodeChef",
-    rating: "1691",
-    rank: "3 Star",
+    rating: "1837",
+    rank: "4 Star",
     link: "https://www.codechef.com/users/blackhat_koder",
     color: "#5B4638",
     logo: `<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 100 100">
@@ -251,7 +251,7 @@ const profiles = [
   {
     name: "CodingStudio",
     rating: "Active",
-    rank: "Learner",
+    rank: "Master",
     link: "https://www.naukri.com/code360/profile/blackhat_coder",
     color: "#FF6B35",
     logo: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
